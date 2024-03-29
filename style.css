@@ -295,12 +295,26 @@ section {
 .header .btn-register:hover,
 .header .btn-register:focus:hover {
   color: #000000;
-  background: rgba(131, 131, 131, 0.8);
+  background: rgba(206, 18, 18, 0.8);
 }
 
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
+
+#navbar {
+  display: none;
+}
+
+@media only screen and (min-width: 769px) {
+  #navbar {
+      display: block;
+  }
+  .mobile-nav-toggle {
+      display: none;
+  }
+}
+
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
@@ -711,8 +725,9 @@ section {
 }
 
 .hero-text {
-  background-color: rgba(255, 244, 244, 0.583);
+  background-color: rgba(255, 244, 244, 0.617);
   border-radius: 25px;
+  padding: 20px;
 }
 
 .hero h2 {
