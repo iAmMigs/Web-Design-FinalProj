@@ -44,7 +44,7 @@ h4,h5,h6 {
 --------------------------------------------------------------*/
 section {
   overflow: hidden;
-  padding: 80px 0;
+  padding: 50px 0;
   scroll-margin-top: 90px;
   overflow: clip;
 }
@@ -55,7 +55,7 @@ section {
 
 .section-header {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 
 .section-header h2 {
@@ -295,7 +295,7 @@ section {
 .header .btn-register:hover,
 .header .btn-register:focus:hover {
   color: #000000;
-  background: rgba(206, 18, 18, 0.8);
+  background: rgba(131, 131, 131, 0.8);
 }
 
 /*--------------------------------------------------------------
@@ -710,13 +710,27 @@ section {
   background-image: url(images/pokemon-party.jpg);
 }
 
+.hero-text {
+  background-color: rgba(255, 244, 244, 0.583);
+  border-radius: 25px;
+}
+
 .hero h2 {
   font-size: 64px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: var(--color-secondary);
+  color: #000000;
   font-family: var(--font-primary);
 }
+
+.hero p{
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+  font-family: var(--font-primary);
+
+}
+
 
 .hero h2 span {
   color: var(--color-primary);

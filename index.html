@@ -20,45 +20,34 @@
 <body>
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <img src="#" alt="">
-        <h1>Webstore</h1>
-      </a>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Products</a></li>
-          
-          <!-- Shows when a user is loggin in (Need JS)
-          <li><a href="#cart">Profile</a></li>
-          <li><a href="#cart">Cart</a></li>
-          <li><a href="#transactions">Transactions</a></li>
-          -->
-        </ul>
-      </nav>
-
-      <a class="btn-signIn" href="#">Sign In</a>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
+        <div class="d-flex">
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+                <img src="#" alt="">
+                <h1>Webstore</h1>
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="ms-auto d-flex">
+            <a class="btn-signIn" href="#">Sign In</a>
+            <a class="btn-register" href="#">Register</a>
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        </div>
     </div>
-  </header>
+</header> 
 
   <section id="hero" class="hero d-flex align-items-center">
     <div class="container">
       <div class="row justify-content-between gy-5">
-        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+        <div class="hero-text col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
           <h2>Get On Your Feet And<br>Catch Them All!</h2>
           <p>Play Pokemon Go now until April 9 and get free Item Boxes and other rewards by completing quests.</p>
-          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#" class="btn-book-a-table">Book a Table</a>
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-          </div>
-        </div>
-        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-          <img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
         </div>
       </div>
     </div>
