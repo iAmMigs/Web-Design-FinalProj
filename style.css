@@ -707,6 +707,7 @@ section {
   position: relative;
   min-height: 60vh;
   padding: 160px 0 60px 0;
+  background-image: url(images/pokemon-party.jpg);
 }
 
 .hero h2 {
