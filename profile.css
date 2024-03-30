@@ -1,0 +1,19 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto; /* Columns for each data */
+  grid-gap: 10px;
+  background-color: #fff; /* Background color for the grid container */
+  color: #333; /* Text color */
+  font-family: Arial, sans-serif; /* Font family */
+  border: 1px solid #ccc; /* Border around the grid */
+  padding: 10px; /* Padding inside the grid container */
+}
+
+.grid-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* Bottom border for each grid item */
+}
+
+.header {
+  font-weight: bold; /* Bold font weight for header row */
+}

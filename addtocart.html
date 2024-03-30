@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="addtocart.css">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+
+        <!--BootStrap Stuff-->
+        <title>Products</title>
+
+    </head>
+    <body>
+        
+        <div class="header">
+            <a href="loggedindex.html">
+                <img src="image/oyako.png" alt="LOGO" class="logo" style="width: 200px; height: auto;">
+            </a>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+        </div>
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">Php 0.00</h2>
+                </div>
+                <button onclick="checkout()">Checkout</button> <br> <br>
+                <button onclick="cancel()">Cancel Order</button>
+            </div>
+        </div>
+        <script src="addtocart.js"></script>
+
+
+        <footer>
+                <center>
+                For Educational purposes only, and no copyright infringement is intended.
+                <br>
+                <br>
+                Designed by Oyakodon
+                </center>
+        
+          </footer>
+
+
+    </body>
+</html>

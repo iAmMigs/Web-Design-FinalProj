@@ -14,6 +14,8 @@
 
   <!-- Main CSS File -->
   <link href="style.css" rel="stylesheet">
+  <link href="loggedindex.css" rel="stylesheet">
+  <link href="profile.css" rel="stylesheet">
   <title>Home Page</title>
 </head>
 
@@ -27,54 +29,84 @@
             </a>
             <nav id="navbar d-inline" class="navbar">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a id="aboutButton" href="#" onclick="showAlert()">About</a></li>
-                    <li><a id="productsButton" href="#" onclick="showAlert()">Products</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="addtocart.html">Products</a></li>
                 </ul>
             </nav>
         </div>
         <div class="ms-auto d-flex">
-            <a class="btn-signIn" href="registration.html">Sign In</a>
-            <a class="btn-register" href="registration.html">Register</a>
-            <button class="mobile-nav-toggle bi bi-list"></button>
-        </div>
+          <div class="dropdown">
+            <button class="dropbtn">Account ▼ </button>
+            <div class="dropdown-content">
+            <a href="profile.html">Profile</a>
+            <a href="index.html">Signout</a>
+            </div>
+          <button class="mobile-nav-toggle bi bi-list"></button>
+      </div>
+      
     </div>
 </header>
 
-  <section id="hero" class="hero d-flex align-items-left">
-    <div class="container">
-      <div class="row">
-        <div class="hero-text col-lg-6 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h2>Get On Your Feet And<br>Catch Them All!</h2>
-          <p>Play Pokemon Go now until April 9 and get free Item Boxes and other rewards by completing quests.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <main id="main">
     <section id="about" class="about">
       <div class="container">
 
         <div class="section-header">
-          <h2>About Us</h2>
-          <p>Learn More <span>About Us</span></p>
+          <p>Profile Page</p>
         </div>
           <div class="d-flex">
             <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-              </p>
+
+              <h2>
+                PokemonTrainer#<span id="random-number">
+              </h2>
+              <h3></h3>
+              <h4> Level 1</h4> 
+              <h4> <img src="image/pokecoin.jpg" height = 25px> 0 Pokecoins</h4>
+
+              <br><br><br>
+              
+              <h2> Transaction History </h2>
+              <div class="grid-container">
+                <!-- Header row -->
+                <div class="grid-item header">Date</div>
+                <div class="grid-item header">Item</div>
+                <div class="grid-item header">OrderID</div>
+                <div class="grid-item header">Transaction ID</div>
+                <div class="grid-item header">Status</div>
+        
+                <!-- Sample data rows -->
+                <div class="grid-item">2024-03-25</div>
+                <div class="grid-item"> <img src="image/coin-large.jpg" height = 35px> Large Coin Pack (2700 Coins) </div>
+                <div class="grid-item">12345</div>
+                <div class="grid-item">67890</div>
+                <div class="grid-item">Not Claimed</div>
+        
+                <div class="grid-item">2024-03-22</div>
+                <div class="grid-item"> <img src="image/coin-small.jpg" height = 35px> Small Coin Pack (600 Coins) </div>
+                <div class="grid-item">54321</div>
+                <div class="grid-item">09876</div>
+                <div class="grid-item">Claimed</div>
+
+                <div class="grid-item">2024-03-21</div>
+                <div class="grid-item"> <img src="image/ticket.jpg" height = 35px> Wonder Ticket </div>
+                <div class="grid-item">13579</div>
+                <div class="grid-item">12010</div>
+                <div class="grid-item">Claimed</div>
+        
+                <!-- Add more rows as needed -->
+            </div>
+              
+              
+              
+              
+              
+              
+              
+              <br><br><br>
 
               <div class="position-relative mt-4">
                 <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
@@ -83,7 +115,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -130,20 +161,28 @@
   
       <div class="container">
         <div class="copyright">
-          &copy;<strong><span> For Educationaly purposes only,</span></strong> and no copyright infrigement is intended.
+          &copy;<strong><span> For Educational purposes only,</span></strong> and no copyright infringement is intended.
         </div>
         <div class="credits">
           Designed by Oyakodon
         </div>
       </div>
+
+
+      <script>
+        function showWarning() {
+          alert("Please Register/Login First");
+      }
+      //ID RANDOM GENERATOR
+      window.onload = function() {
+        var randomNumber = Math.floor(Math.random() * 10000);
+
+        document.getElementById("random-number").innerText = randomNumber;
+    };
+
+      </script>
   
     </footer><!-- End Footer -->
-
-    <script>
-      function showAlert() {
-        alert("Please Login/Register First");
-    }
-    </script>
 
 </body>
 </html>
