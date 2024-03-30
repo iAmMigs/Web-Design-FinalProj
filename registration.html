@@ -1,3 +1,5 @@
+<!-- Registration Page Part : Miguel Osinada -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,10 +73,20 @@
                     
     
                     <button type="submit" class="btn btn-primary w-100" id="Confirm">Register</button>
+                    <a id="alreadyRegistered" href="#">Already have an account?</a>
                 </form>
             </div>   
         </div>
     </div>
+
+    <div class="container login" id="loginDiv" style="display: none;">
+      <h1 class="text-center">Login</h1>
+      <hr>
+      <form action="">
+          <!-- replace with your login form -->
+      </form>
+      <a id="needRegistration" href="#">Need an account?</a>
+  </div>
 
 
     <footer id="footer" class="footer">
@@ -130,8 +142,47 @@
 
 
   <script>
-    document.getElementById("Confirm").addEventListener("click",function(){
-      let email = 
+  function playerIDGenerator() {
+    function fourRandomDigits() {
+      return Math.floor(1000 + Math.random() * 9000);
+    }
+
+      return fourRandomDigits() + ' ' + fourRandomDigits() + ' ' + fourRandomDigits();
+  }
+  
+  document.getElementById('playerId').value = playerIDGenerator();
+
+  document.getElementById("Confirm").addEventListener("click", (event) => {
+      event.preventDefault();
+
+      // Access the form values
+      let email = document.getElementById("email").value;
+      let IGN = document.getElementById("IGN").value;
+      let password = document.getElementById("password").value;
+      let confirmPassword = document.getElementById("confirmPassword").value;
+      
+      const emailRegex = /^\S+@\S+\.\S+$/;
+      const passwordRegex = /^[A-Za-z]\w{7,14}$/;
+      
+      // Validate Email
+      if (!emailRegex.test(email)) {
+          alert("Invalid email address.")
+          return false;
+      }
+      
+      // Validate Password
+      if (!passwordRegex.test(password)) {
+          alert("Password must be 7 to 16 characters long, start with an alphanumeric character, and contain at least one alphanumeric character.")
+          return false;
+      }
+      
+      if (password !== confirmPassword) {
+          alert("Passwords do not match.")
+          return false;
+      }
+      
+      // Submit form or further processing
+      alert("Registration successful!");
   });
   </script>
 
