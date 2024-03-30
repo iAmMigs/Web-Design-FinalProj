@@ -63,23 +63,22 @@
       <div class="container">
 
         <div class="section-header">
-          <h2>About Us</h2>
-          <p>Learn More <span>About Us</span></p>
+          <h2>Useful Items for your adventures</h2>
+          <p>Purchase Bundles of <span>Pokécoins</span></p>
         </div>
           <div class="d-flex">
             <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                Need an extra boost? Buy a bundle of Pokécoins to use and buy in game items like Incense or Master Balls to bolster your pokémon catching adventures! Benefits Include:
               </p>
+  
               <ul>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <li><i class="bi bi-check2-all"></i> Freebies such as Berries for easier catching</li>
+                <li><i class="bi bi-check2-all"></i> Rare Candies for leveling up your Pokémons</li>
+                <li><i class="bi bi-check2-all"></i> Free Incubators to hatch all your eggs while you are out adventuring!</li>
               </ul>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                But Pokécoins aren't the only ones you can buy, you can also get Item boxes such as Wonder Tickets or GO Rocket Boxes Containing lots of Items you can use for your adventures!
               </p>
 
               <div class="position-relative mt-4">
@@ -91,6 +90,73 @@
         </div>
 
       </div>
+    </section>
+
+    <section>
+    <div class="container my-4 bg-light">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="image/coin-small.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">600 Pokecoins</h5>
+              <p class="card-text">₱149</p>
+              <a href="addtocart.html">
+              <button type="button" class="btn btn-primary addToCartButton">Buy</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="image/coin-medium.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">1300 Pokecoins</h5>
+              <p class="card-text">₱289</p>
+              <a href="addtocart.html">
+              <button type="button" class="btn btn-primary addToCartButton">Buy</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="image/coin-large.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">2700 Pokecoins</h5>
+              <p class="card-text">₱589</p>
+              <a href="addtocart.html">
+              <button type="button" class="btn btn-primary addToCartButton">Buy</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="image/coin-xlarge.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">5600 Pokecoins</h5>
+              <p class="card-text">₱1169</p>
+              <a href="addtocart.html">
+              <button type="button" class="btn btn-primary addToCartButton">Buy</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="image/coin-xxlarge.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">15500 Pokecoins</h5>
+              <p class="card-text">₱2950</p>
+              <a href="addtocart.html">
+              <button type="button" class="btn btn-primary addToCartButton">Buy</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </section>
 
 
@@ -106,6 +172,7 @@
                 A108 Adam Street <br>
                 New York, NY 535022 - US<br>
               </p>
+  
             </div>
   
           </div>
@@ -118,6 +185,7 @@
                 <strong>Phone:</strong> +1 5589 55488 55<br>
                 <strong>Email:</strong> info@example.com<br>
               </p>
+  
             </div>
           </div>
   
@@ -144,16 +212,14 @@
       </div>
 
 
-      <script>
-        function showWarning() {
-          alert("Please Register/Login First");
-      }
-
-      
-
-      </script>
   
     </footer><!-- End Footer -->
+
+    <script>
+      document.getElementsByClassName("addToCartButton").addEventListener("click", function() {
+          window.location.href = "addtocart.html";
+      });
+  </script>
 
 </body>
 </html>
