@@ -47,7 +47,7 @@
             <div class="col-6">
                 <h1 class="text-center">Registration</h1>
                 <hr>
-                <form action="">
+                <form action="" id="registrationForm">
                     <div class="mb-3">
                         <label for="email" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
@@ -130,9 +130,37 @@
 
 
   <script>
-    document.getElementById("Confirm").addEventListener("click",function(){
-      let email = 
-  });
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      let email = document.getElementById("email").value;
+      let IGN = document.getElementById("IGN").value;
+      let password = document.getElementById("password").value;
+      let confirmPassword = document.getElementById("confirmPassword").value;
+
+      const emailRegex = /^\S+@\S+\.\S+$/;
+      const passwordRegex = /^[A-Za-z]\w{7,14}$/;
+
+      // Validate Email
+      if (!emailRegex.test(email)) {
+          alert("Invalid email address.")
+          return false;
+      }
+
+      // Validate Password
+      if (!passwordRegex.test(password)) {
+          alert("Password must be 7 to 16 characters long, start with an alphanumeric character, and contain at least one alphanumeric character.")
+          return false;
+      }
+
+      if (password !== confirmPassword) {
+          alert("Passwords do not match.")
+          return false;
+      }
+      
+      // Navigate to logged-in page after successful registration
+      window.location.href = "loggedindex.html";
+ });
   </script>
 
 </body>
